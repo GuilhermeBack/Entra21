@@ -1,0 +1,66 @@
+tabelas
+
+# ou @ é usado para denomidar a chave primária no modelo escrito da tabela
+
+médico (#crm, nome, data_nasc, telefone, email, foto, sexo)
+
+profissão(#idProfissão, nome, descrição. salário, carga_horaria)
+
+comida (#codComida, nome, preço, dt_validade, peso, caloria, qtd_sodio,gluten?)
+
+hobby (#idHobby, nome, descrição, finalidade, frequencia, qtd_calorias)
+
+namorado(a) (#MatNamorada, nome, descrição, nota, sexo, altura, dt_nasc, dt_inicio, dt_fim, investimento, fone)
+
+Paciente (#idPaciente, Num_Sus, nome, dt_nasc, CPF, RG, alergia?, endereço)
+
+médico N ---- N paciente 
+empregado N ---- N cargo
+animal N ---- 1 raça
+aluno N ---- N disciplina
+nota fiscal N ---- 1 cliente
+
+filme N ---- 1 genero
+filme N ---- N genero
+
+produto N ---- 1 tipo de produto
+médico N ---- N especialidade
+aluno N ---- 1 intervalo
+produto N ---- N nota fiscal
+
+
+Aplicando a primeira regra de relacionamento
+chave primaria do lado 1 DEVE SEMPRE estar na tabela do lado N.
+
+nota fiscal N -- 1 cliente
+
+cliente (#CPF, nome, end, dt_nasc, email, fone, ...
+Nota fiscal (#nr_nota, dt, valor_nt, tributos, &CPF)
+
+
+Estado 1 --- N cidade
+
+Cidade (PKidcidade, nome, natalidade, obituario, fKEstado)
+Estado (PKEstado, Cidades, populacao)
+
+
+
+==========================
+Ache o relacionamento, as chaves e alguns campos
+crie o diagrama das tabelas
+
+marido oriental 1 ---- N esposa oriental
+paciente N ----- N doença
+carro N --- 1 proprietario
+editora 1 --- N livro
+autor N --- N livro
+
+proprietario (pkcpf, nome, end)
+carro (pkidcarro, anofab, kilometragem,fkcpf)
+
+editora (pkidEditora, nome, end)
+livro (pkidLivro, nome, nomeautor, fkidEditora)
+
+Marido oriental (PKcpf, nome, altura)
+mulher oriental (PKidmulher, altura, nome, FKcpf)
+a

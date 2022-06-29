@@ -1,0 +1,100 @@
+*Linguagem SQL
+
+Banco de dados
+
+definição;
+ conjunto de informações relacionadas entre sí, sobre um determinado assunto ou entidade que é amarzenado por meio que permita a recuperação posterior
+
+SGBD
+Sistema gerenciador de banco de dados é o conjunto de softwares responsáveis pelo gerenciamento de banco de dados.
+O SGBD disponibiliza uma interface para que seus clientes possam:
+- incluir
+- alterar
+- consultar
+- apagar os dados previamente armazenados.
+
+SGBD Exemplos:
+Oracle
+sql server
+mysql
+microsoft access 
+SQlite
+
+
+Conceitos
+
+Dados: são informações isoladas, são partes de uma informação
+
+campos: são categorias de informações
+
+registros: São conjuntos lógicos de campos, são linhas de uma tabela
+
+tabela: são conjuntos lógicos de registros. chamada também de entidade ou cadastro ou arquivos.
+* toda tabela deve ter um nome significativo-> tabela: funcionários 
+
+banco de dados: são conjuntos de tabelas relacionadas entre sí (ou não)
+
+necessário criar ou usar um campo que não se repete
+esse campo se chama: CHAVE PRIMÁRIA
+
+
+
+
+-----------Aula 02---------
+
+
+ Cardinalidades entre as tabelas
+
+ Existem quatro tipos de relacionamentos:
+ * UM para UM (1-1)
+ *Uma para N (1-N ou N-1[Cardinalidade])
+
+ chave estrangeira
+ a chave estrangeira serve para estabelecer o relacionamento entre duas tabelas.
+ usamos o & (e-comercial) para representar uma chave estrangeira em uma tabela
+
+ amigos (#código, nome, endereço, dt_nasc, &idcidade, &codprofissão)
+ profissão (#codprofissão, nome_profis, descrição)
+ 
+ 1º regra -> 1 para N
+
+ #chave primaria do lado 1 deve estar na tabela do lado N. 
+
+PK = Chave primaria   =  #
+FK = Chave estrangeira  = &
+
+-----------Aula 03 -----------
+
+EM todo relacionamento n para n devemos 
+quebrar o relacionamento 
+criar uma nova tabela ( associativa )
+aplicar a 1ª regra 
+
+
+SQL 
+
+*SELECT *  →→→→→ Selecionar todos os campos
+
+*FROM  →→→→→ Diretório do qual será selecionado
+
+*WHERE →→→→→ Estrutura condicional
+
+-OR →→→→→ Condicional "OU"
+
+-AND →→→→→ Condicional "E"
+
+-LIKE %xxx% →→→→→ Pesquisa aproximada de dado
+
+*UPDATE →→→→→ atualizar campos SE REFERIR A TABELA DESEJADA
+
+*SET →→→→→ Alteração dos campos
+
+*DELETE →→→→→ autoexplicativo, deleta os campos da tabela
+
+SELECT → campo1, campo2
+FROM → nome_da_tabela
+WHERE condição_desejada;
+
+
+
+SEMPRE COM PONTO E VÍRGULA ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
