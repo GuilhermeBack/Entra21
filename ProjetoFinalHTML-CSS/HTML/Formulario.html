@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Final</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="rolagem">
+        <header>
+            <img src="../imagens/background.jpeg" class="background">
+            <h1 class="tittle"> Bem Vindo</h1>
+        </header>
+        <div class="conteudo">
+            <nav>
+                <ul>
+                    <li><a href="index.html#">Home</a></li>
+                    <li><a href="Index.html#sobre">Sobre</a></li>
+                    <li><a href="Index.html#ref">Referências</a></li>
+                    <li><a href="Formulario.html">Formulário</a></li>
+                </ul>
+            </nav>
+            <div class="forms">
+                <form class="conteudoform">
+                    <h3> Por favor, avalie meu Site</h3>
+                    <br>
+                    <h4>Nota :</h4>
+                    <input type="radio" name="opcao" checked>Muito bom
+                    <input type="radio" name="opcao">Bom
+                    <input type="radio" name="opcao">Regular
+                    <input type="radio" name="opcao">Ruim
+                    <input type="radio" name="opcao">Péssimo
+
+                    <h4> Qual atributo do site você mais gostou?</h4>
+                    <select id="secao">
+                        <option value="fundo3d"> Fundo 3D</option>
+                        <option value="navbar">Navbar rolante</option>
+                    </select>
+                    <label for="outra">Outro:</label>
+                    <input class="campo" type="text" name="outra">
+                    <br>
+                    <h4>Gostaria de deixar alguma sugestão?</h4>
+                    <textarea name="areatexto" cols="20" rows="10" placeholder="Deixe sua dica ;)"
+                        maxlength="200"></textarea>
+                    <table>
+                        <tr>
+                            <td> Nome</td>
+                            <td><input class="campo" type="text" name="nome"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input class="campo" type="mail" name="email"></td>
+                            <br>
+                        </tr>
+                    </table>
+                    <input class="tabela" type="submit" name="enviar" value="Enviar">
+                    <input class="tabela" type="reset" name="reset" value="limpar">
+                </form>
+            </div>
+            <footer>
+                <div class="footer">
+                    <h6> Contato</h6>
+                    <a href="mailto:guilhermeluiz_back@hotmail.com"> Me envie um Email!</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

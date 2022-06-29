@@ -1,0 +1,15 @@
+git init > inicializa uma pasta com o git
+git add nome_do_arquivo -> adiciona os arquivos para serem versionados
+git commit -m "uma mensagem legal" -> cria nova versão do código
+git remote add origin link_do_projeto_no_git
+git branch -M 'main' =>Altera o nome da branch pra main
+caso abre o vi/vim e nao inserir o -m / Apertar a tecla i, digitar a mensagem e apertar ESC :wq - enter para salvar o arquivo
+
+(vi/vim) editor de texto para usar em m terminal linux
+
+git push origin nome_da_branch
+-envia o código do local para o remoto
+
+git pull origin nome_da_branch 
+- trazer o código alterado no remoto para o local
+git add. add todos os arquivos

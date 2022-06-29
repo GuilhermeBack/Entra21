@@ -1,0 +1,33 @@
+#tabelas, #thtabela, #tdtabela{
+    border: 2px inset black;
+    border-radius: 10px;
+    }
+h1{
+    color: rgb(119, 116, 116);
+    text-align: center;
+    font-size: 40px;
+}
+#thtabela{
+    background-color: powderblue;
+}
+#tdtabela{
+    background-color: aquamarine ;
+}
+
+#teste{
+    background-color: rgb(177, 206, 226);
+}
+#formtitle{
+    color: rgb(2, 2, 2);
+}
+textarea{
+    resize: none;
+}
+#tdform{
+    background-color: aliceblue;
+}
+#tabelaform{
+    border: 2px solid black;
+    border-radius: 10px;
+    border-collapse: collapse;
+}

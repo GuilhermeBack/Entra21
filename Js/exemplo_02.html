@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="paginaCarregada()">
+
+    <header id="cabecalho">
+     <!-- onmouseover="efeito_no_header(this)"
+            onmouseleave ="efeito_no_header_normal(this)"> -->
+    
+        <h1>Cabeçalho</h1>
+    </header>
+        <aside>
+            
+            <button type="button" onclick="trocar_cabecalho()">
+                trocar cabeçalho
+            </button>
+
+            <button type="button" id="reset" onclick="reset()">
+                Reset
+            </button>
+
+            <button type="button" id="multiplica" onclick="multiplica()" > Vezes 2
+
+            </button>
+            </aside>
+    <footer>
+
+    </footer>
+    <script type="text/javascript">
+        
+        let contador = 0;
+        const trocar_cabecalho = () =>{
+            let cabecalho = document.getElementById ('cabecalho');
+            //contador++;
+            cabecalho.innerHTML = `<h1>Mudou uma ${++contador} vez !</h1>`;   
+        }
+        const reset = () =>{
+            let cabecalho = document.getElementById ('cabecalho');
+            contador = 0;
+            cabecalho.innerHTML = `cabecalho voltou para ${contador}`;
+        };
+
+        const multiplica = () =>{
+            let cabecalho = document.getElementById ('cabecalho');
+            cabecalho.innerHTML = `<h1>Mudou uma ${contador * 2} vez !</h1>`; 
+        }
+        const efeito_no_header_normal= (element) =>{
+               
+        //     element.style.color = "#000"  
+        //  //innerText usado para trocar apenas o texto →Sem utilizar o html/css
+        //     element.innerText = "Mouse in"; 
+        //  //usado para imbutir um novo elemento html   
+        //     //element.innerHTML= "<h1>mouse in</h1>";
+        // };
+        // //↓função que recebe parametro, nesse caso o elemento ↓
+        // const efeito_no_header = (element) => {
+        // //console.log(element); ELEMENTO CAPTURADO POR (THIS)
+        //     element.style.color = "#01AB67";
+        //     //element.innerHTML= "<h1>mouse over</h1>";
+        //     element.innerText = "Mouse over";
+        //possibilidade de alterar propriedades de css
+        //via elemento
+        };
+        const paginaCarregada = ()=>{
+           // alert ('A página carregou!')
+        };
+//Atribuição de função anônima a uma constante,
+//utilizando ()=> {  }; (arrow function)
+        const clickNoCabecalho = function (){
+            alert('você clicou parceiro')
+        };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        form {
+            margin-left: 25%;
+        }
+
+        .input-form {
+            padding: 10px;
+        }
+        *{
+            color: blue;
+        }
+        #sucesso{
+            text-align: right;
+            border: 2px solid red;
+            font-size: 15px;
+            width: 200px;
+            height: 200px;
+            float: right;
+        }
+        #falha{
+            border: 2px solid blue;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="form_login">
+        <div id="sucesso">
+        </div>
+        <div class="input-form">
+            <label>Login</label>
+            <input id="login" type="text">
+        </div>
+        <div class="input-form">
+            <label>Senha</label>
+            <input id="senha" type="password">
+        </div>
+        <div class="input-form">
+            <button type="button" onclick="realizarLogin()">Entrar</button>
+        </div>
+        <div id="falha">
+
+        </div>
+
+    </form>
+    <script type="text/javascript">
+
+        const logincerto = document.getElementById('sucesso');
+        const loginerrado = document.getElementById('falha');
+        const testeVerificarLogin = (login, senha) => {
+
+                if (login == 'maria@teste.com' && senha == '123') {
+                    logincerto.innerHTML = `<h4>login certo</h4>`;
+                    loginerrado.innerHTML = null;
+                        // alert('Bem vindo Você está logando');
+             
+                    //criem uma div e mostre a mensagem no canto superior direito.
+                } else {
+                    // alert('Credenciais inválidas'.toLocaleUpperCase())
+                    loginerrado.innerHTML = `login incorreto`;
+                    logincerto.innerHTML = null
+                    //aparecer a mensagem abaixo do botão de login
+                }
+            }
+        
+            const validarInputs = (login, senha, InputLogin, InputSenha) => {
+                if (!login.includes('@') || !login.includes('.')) {
+                    InputLogin.style.borderColor = "red";
+                    InputLogin.style.color = "red";
+                }
+                if (senha == undefined || senha == "") {
+                    InputSenha.style.borderColor = "red";
+                    InputSenha.style.color = "red";
+                }
+            }
+
+            const realizarLogin = () => {
+                const InputLogin = document.getElementById('login');
+                const InputSenha = document.getElementById('senha');
+                const senha = InputSenha.value;
+                const login = InputLogin.value;
+                validarInputs(login, senha, InputLogin, InputSenha);
+                testeVerificarLogin(login, senha);
+                // console.log(login, senha);
+                // console.log("existe o termo @ na string?", login.includes('@'));
+                // console.log("existe o termo . na string?", login.includes('.'));
+                // NEGAÇÃO = ! antes da variavel
+                // E = &&
+                // OU = ||
+                // alert("Email Inválido!");
+
+                //     inputSenha.value = "";
+                //     inputLogin.value = "";
+                //     inputLogin.style.borderColor = "red";
+                //     inputLogin.style.color = "red";
+                //     // document.getElementById('login').value = "";
+                //     // document.getElementById('senha').value = "";
+                // if(senha == undefined || senha = ""){
+
+                // }
+            }
+
+
+
+
+    </script>
+</body>
+
+</html>

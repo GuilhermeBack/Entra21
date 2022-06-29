@@ -1,0 +1,62 @@
+h2{
+    background-color: darkcyan;
+}
+#paragrafo1{
+    text-align:justify;
+    background-color: darkorchid;
+    color: black;
+}
+.paragrafo1{
+    background-color: darkorange;
+    color: black;
+}
+.paragrafo1:hover{
+    opacity: 0.9;
+}
+
+/* .div.background {
+    background: url(klematis.jpg) repeat;
+    border: 2px solid black;
+  }
+  
+.div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+  }
+  
+.div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  } */
+  html{
+      background-color: grey;
+  }
+  *{
+      margin: 0 auto;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+  }
+h1{
+    text-align: center;
+    margin: 50px;
+} 
+
+h2{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #demo{
+      color: blue;
+  }
+  .teste{
+      color: yellowgreen;
+  }

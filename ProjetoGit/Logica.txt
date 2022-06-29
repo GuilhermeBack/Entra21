@@ -1,0 +1,50 @@
+1-
+
+inicio
+    b, h, area, perimetro : numérico
+    leia "digite o valor da base", b
+    leia "digite o valor da altura", h
+    perimetro == (2*b) + (2*h)
+    area == (b*h)
+fim
+
+2-
+
+inicio
+   
+
+
+
+
+
+
+
+
+    3
+
+inicio 
+    var
+    cliente : literal 
+    qtdporca, qtdparafuso, qtdarruela : inteiro
+    descporca, descparafuso, descarruela, valorporca, valorparafuso, valorarruela totaldesc, valorfinal: real
+    leia "digite o nome do cliente", cliente
+    leia "digite a quantidade de parafusos", numpar
+    leia "digite a quantidade de porcas", numpor
+    leia "digite a quantidade de arruelas", numarr
+    descporca == valorporca*(10/100)
+    descparafuso == valorparafuso*(20/100)
+    descarruela == valorarruela*(30/100)
+
+aaa
+
+
+  Ler  15  elementos  de  uma  matriz  tipo  vetor.
+    Construir  uma matriz  B  de  mesmo  tipo,  
+    observando  a seguintes  lei  de  formação:  “Todo  elemento  de  B  deverá  ser  o  quadrado  do  elemento  de  A correspondente”.
+     Apresentar as matrizes A e B. 
+
+
+Ler duas matrizes A e B do tipo vetor com 15 elementos cada. 
+Construir uma matriz C, sendo esta a junção  das  duas  outras  matrizes.
+ Desta  forma,  C  deverá  ter  o  dobro  de  elementos,  ou  seja,  30.
+ Apresentar a matriz C. 

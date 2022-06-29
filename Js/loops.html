@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="addItem()">adicionar item</button>
+    <button type="button" onclick="delet()">resetar</button>
+    <button type="button" onclick="plus()">+1</button>
+
+    <ul id="lista">
+
+    </ul>
+    <script type="text/javascript">
+        const ulLista = document.getElementById('lista');
+        const addItem = () => {
+            const valor = prompt('Informe um Item para a lista');
+            // console.log(valor);
+            ulLista.innerHTML += `Tabuada do número ${valor}`;
+            ulLista.innerHTML +=`<li>${valor}</li>`;
+            for(let indice_do_loop = 0; indice_do_loop<=10; indice_do_loop++){
+                ulLista.innerHTML +=`<li>${indice_do_loop} x
+                    ${valor} = ${valor * indice_do_loop}</li>`;
+                //console.log(indice_do_loop);
+        };
+        ulLista.innerHTML += '<br><hr>'
+        };
+
+        const delet = () => {
+            ulLista.innerHTML = "";
+        };
+
+        // const plus = () => {
+        //     const ulLista = document.getElementById('lista');
+        //     ulLista.innerHTML += `Tabuada do número ${valor}`;
+        //     ulLista.innerHTML +=`<li>${valor}</li>`;
+        //     for(let indice_do_loop = 0; indice_do_loop<=10; indice_do_loop++){
+        //         ulLista.innerHTML +=`<li>${indice_do_loop} x
+        //             ${valor} = ${valor * indice_do_loop}</li>`;
+        // };
+        //loops
+        // for(let indice_do_loop = 0; indice_do_loop<10; indice_do_loop++){
+        //     console.log(indice_do_loop);
+        // };
+    </script>
+</body>
+</html>

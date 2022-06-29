@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulários</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body id=teste>
+    <h1 id="formtitle"> Formulários</h1>
+    <h3> O quão difícil é fazer um formulário Simples?</h3>
+    <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Difícil</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Médio</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">fácil</label>
+    </form>
+    <h3>Insira seu nome</h3>
+        <form>
+            <label for="nome">Primeiro nome</label><br>
+            <input type="text" name="nome">
+            <br>
+            <label for="sobrenome"> Segundo nome</label>
+            <br>
+            <input type="text" name="sobrenome">
+            <br>
+            <br>
+            <input type="button" name="botao" value="Botão">
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="reset" name="reset" value="limpar">
+            <br>
+            <!-- Radio button-->
+            <h3> Qual sua opinião sobre o site?</h3>
+            <br>
+            <input type="radio" name="opcao" checked>Muito bom
+            <input type="radio" name="opcao">Bom
+            <input type="radio" name="opcao">Regular
+            <input type="radio" name="opcao">Uma M
+            <br>
+            <h3>Possui algum veículo?</h3>
+            <input type="checkbox" name="veiculo" valor="Carro">carro
+            <input type="checkbox" name="veiculo" valor="bicicleta">bicicleta
+            <input type="checkbox" name="veiculo" valor="moto">moto
+            <br>
+            <br>
+            <h2> Qual seção você mais gostou?</h2>
+                <select name=" secao">
+                    <option value="cartaz"> em cartaz</option>
+                    <option value="animacao">animacao</option>
+                    <option value="romance">romance</option>
+                </select>
+            <label for="outra">Outra:</label>
+            <input type="text" name="outra">
+            <br>
+            <textarea name="areatexto" 
+            cols="20" 
+            rows="10" 
+            placeholder="Digite um texto" 
+            maxlength="50"
+            ></textarea>
+            <br>
+            <br>
+            <br>
+            <table id="tabelaform">
+                <tr>
+                    <td id="tdform"> nome</td>
+                    <td id="tdform"><input type="text" name="nome2"></td> 
+                </tr>
+                <tr>
+                    <td id="tdform">Email:</td>
+                    <td id="tdform"><input type="mail" name="email"></td>
+                </tr>
+            </table>
+    </form>
+</body>
+</html>

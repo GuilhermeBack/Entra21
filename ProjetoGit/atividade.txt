@@ -1,0 +1,5 @@
+colocar uma explicação sobre scrum no aarquivo scrum.md e enviar para o github
+
+colocar uma explicação sobre kanban no arquivo kanban.md e enviar para o github
+
+no arquivo comandos_basicos.md colocar os comandos qie vimos na aula até o momento e enviar para o github

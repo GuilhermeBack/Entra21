@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            margin-bottom: 10px;
+            text-decoration: none;
+            text-shadow: 0 2px 5px rgb(187, 16, 16);
+            color:white;
+            list-style-type: none;
+            border: 2px double;
+            width: max-content;
+            border-radius: 15px;
+        }
+        body{
+            background: rgba(51, 51, 51, 0.603);
+        }
+        #lista{
+            padding-left: 20px;
+        }
+        .deletar{color:red; cursor:pointer}
+       
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="addItem()">adicionar item</button>
+    <!-- <button type="button" onclick="delet()">resetar</button>
+    <button type="button" onclick="plus()">+1</button> -->
+  
+    <div id="lista"></div>
+
+
+    <script type="text/javascript">
+        const ulLista = document.getElementById('lista');
+        const addItem = () => {
+            let lista = "";
+            const valor = Number(prompt('Informe um Item para a lista'));
+            console.log(valor, typeof valor);
+            if ( valor != null && valor != undefined && valor )
+             
+            {
+            // console.log(valor);
+            lista += `<ul>`;
+            lista += `<h2>Tabuada do número ${valor} <span class="deletar" onclick="remover(this.parentNode.parentNode)">Deletar</spam></h2>`;
+            // lista +=`<li>${valor}</li>`;
+            for (let indice_do_loop = 0; indice_do_loop <=10; indice_do_loop++){
+                lista += `<li>${indice_do_loop} x ${valor} = ${valor *  indice_do_loop}</li>`;
+                //console.log(indice_do_loop);
+            };
+        lista += '</ul>'
+        // lista += '<br>'
+        ulLista.innerHTML += lista;
+        }
+        };
+        // const delet = () => {
+        //     ulLista.innerHTML = "";
+        // };
+        const remover = (elemento) => { 
+           
+            const eh_para_remover = confirm("deseja realmente remover?") //sempre devolve um booleano / /true para ok e false para cancelar
+           if (eh_para_remover == true){  //usar uma estrutura de repetição.
+               elemento.innerHTML= null;
+               alert("conteúdo removido com sucesso")
+
+           }
+            console.log(elemento);
+            // const elementoPai = elemento.getParentNode();
+        }
+        
+        // const plus = () => {
+        //     const ulLista = document.getElementById('lista');
+        //     ulLista.innerHTML += `Tabuada do número ${valor}`;
+        //     ulLista.innerHTML +=`<li>${valor}</li>`;
+        //     for(let indice_do_loop = 0; indice_do_loop<=10; indice_do_loop++){
+        //         ulLista.innerHTML +=`<li>${indice_do_loop} x
+        //             ${valor} = ${valor * indice_do_loop}</li>`;
+        // };
+        //loops
+        // for(let indice_do_loop = 0; indice_do_loop<10; indice_do_loop++){
+        //     console.log(indice_do_loop);
+        // };
+    </script>
+</body>
+</html>
