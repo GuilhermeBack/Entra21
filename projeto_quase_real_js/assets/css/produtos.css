@@ -1,0 +1,17 @@
+#lista-produtos{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    padding: 3rem;
+}
+.produto{
+    width: 200px;
+    padding: 2rem;
+    background-color:blanchedalmond;
+    color: black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px 0px;
+    border: 3px solid black
+}

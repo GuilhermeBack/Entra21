@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    
+}
+span {
+    width: min-content;
+}
+.user {
+    padding-right: 200px;
+}
+
+button {
+
+}

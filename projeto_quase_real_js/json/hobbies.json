@@ -1,0 +1,23 @@
+[
+    {
+        "produto": "Produto 01",
+        "preco": 3.65,
+        "descricao": "Lorem ipsum!",
+        "em_stoque": true,
+        "img": "assets/img/img001.jpg"
+    },
+    {
+        "produto": "Produto 02",
+        "preco": 100.00,
+        "descricao": "Lorem ipsum! Not ipusum!",
+        "em_stoque": false,
+        "img": "assets/img/img002.jpg"
+    },
+    {
+        "produto": "Produto 03",
+        "preco": 0.90,
+        "descricao": "Lorem ipsum! Not ipusum! Outro ipusum!",
+        "em_stoque": true,
+        "img": "assets/img/img003.jpg"
+    }
+]
