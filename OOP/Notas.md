@@ -1,3 +1,4 @@
+
 # Orientação a objeto
 Orientação a objeto é um conceito q está relacionado a ideia de classificar, organizar e abstrair coisas.
 
@@ -49,3 +50,10 @@ cardinalidade ou multiciplidade
 2 médico - paciente - doença 
 3 imóvel - dono - profissão
 4 ator - filme - estúdio
+
+
+criar diagrama de classes, bem como os atributos dos dados de cada classe e realacionamentos, para a área de controle academico de uma escola genérica, onde temos as seguintes informações:
+é composta de diversos departamentos, os quais podem oferecer diversos cursos;
+uma disciplina é oferecida por um único departamento;
+todo aluno está matriculado em um único curso;
+uma mesma disciplina pode constar do

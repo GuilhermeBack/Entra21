@@ -152,3 +152,5 @@ btnreset.onclick = () => {
             exibirProdutos(vetorProduto)
         }
     }
+
+
